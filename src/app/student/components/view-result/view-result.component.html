@@ -1,0 +1,36 @@
+<div class="header" >
+    <div style="flex-grow: 1; text-align: center;"><h1>Result Management System</h1></div>
+    <div class="logout">
+        <a routerLink=""  class="btn btn-primary logout-button">Logout</a>
+    </div>
+</div>
+
+<div class="container" >
+    
+    <form class="form col-6" #findResultForm="ngForm" (ngsubmit)="findResult(findResultForm)">
+        <div>
+            <h4>Find Result</h4>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="rollNo">Roll No.</label>
+            <input id="rollNo" name="rollNo" [(ngModel)]="rollNo" type="text" class="form-control" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" [(ngModel)]="name" type="text" class="form-control" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <button (click)="findResult(findResultForm)" type="submit" class="btn btn-primary mt-5">Submit</button>
+            <button  type="reset" class="btn btn-primary mt-5" style="margin-left: 5%; background-color: #FFFFE0; color: black;">Clear</button>
+        </div>
+        <br>
+        <div class="form-group">
+            <h5 style="color:red;">{{errorMsg}}</h5>
+        </div>
+    </form>
+    
+       
+</div>

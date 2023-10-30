@@ -1,0 +1,23 @@
+.header{
+    display: flex; 
+    justify-content: space-between;
+     align-items: center; 
+     background-color: #42f5b3;
+      padding: 2px;
+    
+}
+.logout{
+    margin-right: 2%;
+}
+ .logout-button{
+    background-color: #FFFFE0;
+    color: black;
+}
+.container{
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+  
+}

@@ -1,0 +1,28 @@
+<div class="header" >
+    <div style="flex-grow: 1; text-align: center;"><h1>Result Management System</h1></div>
+    <div class="logout">
+        <a routerLink=""  class="btn btn-primary logout-button">Logout</a>
+    </div>
+</div>
+<a (click)="redirect()" routerLink="student-login"><h5>Back</h5></a>
+<div class="container">
+    <div class="">
+      <h4>Result</h4>
+      <br>
+      <div class="form-group">
+        <h4>Roll No: {{ rollNo }}</h4>
+      </div> <br>
+      <div class="form-group">
+        <h4>Name: {{ name }}</h4>
+      </div>
+      <br>
+      <div class="form-group">
+        <h4>Date Of Birth: {{ dateOfBirth }}</h4>
+      </div> <br>
+      <div class="form-group">
+        <h4>Score: {{ score }}</h4>
+      </div>
+      <br>
+    </div>
+  </div>
+  

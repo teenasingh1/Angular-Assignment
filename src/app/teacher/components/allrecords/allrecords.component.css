@@ -1,0 +1,21 @@
+.header{
+    display: flex; 
+    justify-content: space-between;
+     align-items: center; 
+     background-color: #42f5b3;
+      padding: 2px;
+    
+}
+.logout{
+    margin-right: 2%;
+}
+ .logout-button{
+    background-color: #FFFFE0;
+    color: black;
+}
+.add{
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 2%;
+    margin-right: 5%;
+}

@@ -1,0 +1,40 @@
+<div class="header" >
+    <div style="flex-grow: 1; text-align: center;"><h1>Result Management System</h1></div>
+    <div class="logout">
+        <a routerLink=""  class="btn btn-primary logout-button">Logout</a>
+    </div>
+</div>
+<a (click)="redirect()" routerLink="teacher-login"><h5>Back</h5></a>
+<div class="container">
+    <h1>Edit Result</h1>
+</div>
+<div class="container">
+    <h1 style="color: green;">{{msg}}</h1>
+    <form #editRecordForm="ngForm" (ngsubmit)="editRecord(editRecordForm)">
+        <div class="from-group">
+            <label for="rollNo">Roll No.</label>
+            <input id="rollNo" name="rollNo" [(ngModel)]="rollNo" type="text" class="form-control" placeholder="123456">
+        </div>
+        <br>
+        <div class="from-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" [(ngModel)]="name" type="text" class="form-control" placeholder="John Smith">
+        </div>
+        <br>
+        <div class="from-group">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input id="dateOfBirth" name="dateOfBirth" [(ngModel)]="dateOfBirth" type="string" class="form-control" placeholder="01-01-2000">
+        </div>
+        <br>
+        <div class="from-group">
+            <label for="score">Score</label>
+            <input id="score" name="score" [(ngModel)]="score" type="text" class="form-control" placeholder="500">
+        </div>
+        <div class="form-group">
+            <button (click)="editRecord(editRecordForm)" type="submit" class="btn btn-primary mt-5">Submit</button>
+            <button  type="reset" class="btn btn-primary mt-5" style="margin-left: 5%; background-color: #FFFFE0; color: black;">Clear</button>
+        </div>
+    </form>
+    
+</div>
+
